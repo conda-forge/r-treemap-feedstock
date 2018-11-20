@@ -14,9 +14,9 @@ source:
   sha256: 206d32ec0c741a6727e70082e0fef9e5b9e94967178e25d02e65f9ccdb7c6d95
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 0
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
@@ -54,8 +54,7 @@ about:
   summary: A treemap is a space-filling visualization of hierarchical structures. This package
     offers great flexibility to draw treemaps.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:

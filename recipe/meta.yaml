@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: treemap_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/treemap_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/treemap/treemap_{{ version }}.tar.gz
@@ -50,7 +49,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=treemap
-  license: GPL-3
+  license: GPL-3.0-only
   summary: A treemap is a space-filling visualization of hierarchical structures. This package
     offers great flexibility to draw treemaps.
   license_family: GPL3
@@ -59,9 +58,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast

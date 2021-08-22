@@ -1,4 +1,4 @@
-{% set version = '2.4-2' %}
+{% set version = "2.4-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/treemap_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/treemap/treemap_{{ version }}.tar.gz
-  sha256: 206d32ec0c741a6727e70082e0fef9e5b9e94967178e25d02e65f9ccdb7c6d95
+  sha256: 040f9f104f70e22097bd71636e2a7568b39da3e8592d31acaea7a3c19f7fe8b9
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,10 +50,9 @@ test:
 about:
   home: https://CRAN.R-project.org/package=treemap
   license: GPL-3.0-only
-  summary: A treemap is a space-filling visualization of hierarchical structures. This package
-    offers great flexibility to draw treemaps.
+  summary: A treemap is a space-filling visualization of hierarchical structures. This package offers great flexibility to draw treemaps.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

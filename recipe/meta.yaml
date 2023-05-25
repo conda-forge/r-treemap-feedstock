@@ -1,4 +1,4 @@
-{% set version = "2.4-3" %}
+{% set version = "2.4-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/treemap_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/treemap/treemap_{{ version }}.tar.gz
-  sha256: 040f9f104f70e22097bd71636e2a7568b39da3e8592d31acaea7a3c19f7fe8b9
+  sha256: c55a8b271f16405a283978cd4e0bef7192840b397aa7bb6fbbf9233b875677c0
 
 build:
   noarch: generic
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/

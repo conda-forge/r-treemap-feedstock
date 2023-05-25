@@ -1,11 +1,11 @@
-About r-treemap
-===============
+About r-treemap-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-treemap-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=treemap
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-treemap-feedstock/blob/main/LICENSE.txt)
 
 Summary: A treemap is a space-filling visualization of hierarchical structures. This package offers great flexibility to draw treemaps.
 
